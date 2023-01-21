@@ -11,7 +11,7 @@ export default function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (editId) {
+    if (editId !== 0) {
       const editTodo = listTodo.find((i) => i.id === editId);
       const updatedTodos = listTodo.map((t) =>
         t.id === editTodo.id
